@@ -17,8 +17,9 @@
 
     <com.leo.android.wheelview.WheelView
         android:id="@+id/wheelview"
+        android:background="@color/colorPrimary"
         android:padding="10dp"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         />

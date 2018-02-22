@@ -593,11 +593,11 @@ public final class WheelView extends View {
         switch (mTextGravity & Gravity.HORIZONTAL_GRAVITY_MASK) {
             case Gravity.LEFT:
             case Gravity.START:
-                pointF.x = mTextRect.left;
+                pointF.x = 0;
                 break;
             case Gravity.END:
             case Gravity.RIGHT:
-                pointF.x = mTextRect.bottom - textSizeRect.width();
+                pointF.x = mTextRect.right - textSizeRect.width();
                 break;
             default:
             case Gravity.CENTER_HORIZONTAL:

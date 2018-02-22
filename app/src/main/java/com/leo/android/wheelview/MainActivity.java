@@ -2,6 +2,7 @@ package com.leo.android.wheelview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final WheelView wheelView = findViewById(R.id.wheelview);
         wheelView.setTextSize(80);
         wheelView.setVisibilityCount(7);
+        wheelView.setTextGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
         wheelView.setSelectedTextColor(getColor(R.color.colorAccent));
         final List<String> dataSources = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
