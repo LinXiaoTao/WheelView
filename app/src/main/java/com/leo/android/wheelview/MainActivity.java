@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         wheelView.setTextGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
         wheelView.setSelectedTextColor(getColor(R.color.colorAccent));
         final List<String> dataSources = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             dataSources.add("数据" + i);
         }
         wheelView.setDataSources(dataSources);
